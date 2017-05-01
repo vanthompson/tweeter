@@ -21,3 +21,21 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    attributes:
+      tweet:
+        message: "A Tweet"
+      user: 
+        username: "Your Username" 
+    errors:
+      models:
+        tweet:
+          attributes:
+            message:
+              blank: "is missing.  Cat got your tongue?"
+              too_long: "is only 140 max.  Everyone knows that!!" 
+        user:
+          attributes:
+            username:
+              taken: "must be unique!  Like a snowflake or another snowflake.
+                      In other words, that name is taken, Buster"      
