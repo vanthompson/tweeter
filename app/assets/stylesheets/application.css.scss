@@ -15,3 +15,15 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+ .cant-see-me {
+  display: none;
+} 
+
+body {
+    background-color: #D8D8D8;
+}
+
+.small-text {
+    font-size: 11px;
+}
