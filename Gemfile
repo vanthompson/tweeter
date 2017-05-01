@@ -9,6 +9,7 @@ gem 'rails', '~> 5.0.2'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
 
+gem 'font-awesome-rails'
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -23,6 +24,7 @@ gem 'devise'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :development do
