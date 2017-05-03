@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>All Tweets</h1>
+<p>Current User: <%= @current_user.username %></p> <!--here so you remember who you are signed in as. -->
 
 <table>
   <thead>
@@ -15,7 +16,7 @@
     <% @tweets.each do |tweet| %>
       <tr>
         <td><%= tweet.message %></td>
-        <td><%= tweet.user.username %></td>
+        <td><%= link_to tweet.user.username, user_profile_path(id: tweet.user_id) %></td>
         <td><%= link_to 'Show', tweet %></td>
         <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
         <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
