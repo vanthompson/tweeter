@@ -6,7 +6,6 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.0.2'
-gem 'sqlite3'
 gem 'puma', '~> 3.0'
 
 gem 'font-awesome-rails'
@@ -23,6 +22,7 @@ gem 'devise'
 #gem "paperclip"
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'byebug', platform: :mri
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -35,3 +35,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor', '0.0.2'
+end
